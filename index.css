@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border: 4px solid gray;
+    border-radius: 20px;
+}
+
+header .header-1{
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    background: gray;
+    left: 47%;
+    top:-3px ;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-1 .header-2{
+    width:30px ;
+    height: 3px;
+    background: #fff;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+
+
+}
+header .header-1 .header-3{
+    width:4px ;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 1px;
+}
+
+header nav{
+    width: 90%;
+    height: 7.5%;
+    border: 1px solid #fff;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .name-header{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid white; */
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+}
+header nav ul{
+    width: 60%;
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
