@@ -53,13 +53,13 @@ header .header-1 .header-3{
 }
 
 header nav{
-    width: 90%;
+    width: 95%;
     height: 7.5%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 header nav .name-header{
@@ -75,9 +75,69 @@ header nav .name-header{
 header nav ul{
     width: 60%;
     height: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     align-items: flex-end;
     justify-content: center;
 
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    
+}
+
+header nav ul li a:hover{
+    color: gray;
+}
+
+header nav .buscardor{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+header nav .buscador input{
+    width: 90%;
+    padding: 5px 0px 3px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/*nav end*/
+header section{
+    border: 1px solid white;
+    width: 95%;
+    height: 56.5%;
+    margin: auto;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;   
+}
+
+header section .container{
+    border: 1px solid white;
+    width: 400px;
+    height: 70%;
+}
+
+header .card{
+    border: 1px solid white;
+    width: 95%;
+    height: 36%;
+    margin: au;
 }
