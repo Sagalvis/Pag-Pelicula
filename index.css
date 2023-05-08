@@ -1,16 +1,30 @@
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    
 }
 
 body{
+    
     width: 100%;
     height: 100vh;
     background: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+body::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(img/fondo-body.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    opacity: .40;
+
 }
 
 header{
@@ -19,7 +33,18 @@ header{
     height: 90%;
     border: 4px solid gray;
     border-radius: 20px;
+    z-index: 2;
 }
+header .img-main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius:20px ;
+    z-index: -1;
+
+}
+
 
 header .header-1{
     position: absolute;
@@ -65,12 +90,20 @@ header nav{
 header nav .name-header{
     width: 20%;
     height: 100%;
+    font-family:Robo;
     /* border: 1px solid white; */
-    color: white;
+    color: rgb(248, 0, 0);
     display: flex;
+    font-size: 30PX;
     align-items: flex-end;
     justify-content: flex-start;
 
+}
+header nav .name-header:hover{
+    color: white;
+    transition: .2s;
+    -webkit-transform:scale(1.10);transform:scale(1.10);
+    
 }
 header nav ul{
     width: 60%;
@@ -92,14 +125,17 @@ header nav ul li {
 header nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     transition: all .3s ease-in-out;
     
 }
 
 header nav ul li a:hover{
-    color: gray;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 15px;
+    color: rgb(255, 0, 0);
 }
 
 header nav .buscardor{
@@ -109,8 +145,8 @@ header nav .buscardor{
     align-items: flex-end;
     justify-content: flex-end;
 }
-
 header nav .buscador input{
+    color: red;
     width: 90%;
     padding: 5px 0px 3px 15px;
     border-radius: 20px;
@@ -118,9 +154,11 @@ header nav .buscador input{
     outline: none;
 }
 
+
+
 /*nav end*/
 header section{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 95%;
     height: 56.5%;
     margin: auto;
@@ -130,7 +168,7 @@ header section{
 }
 
 header section .container{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 400px;
     height: 70%;
     padding-left: 60px;
@@ -163,11 +201,113 @@ header section .container .subtitle span {
 }
 header section .container .botones{
     margin-top: 5px;
+    display: flex;
 }
- /*card start*/
-header .card{
-    border: 1px solid white;
+header section .container .botones button{
+    background: rgb(75, 75, 75) ;
+    border: none;
+    outline: none;
+    padding: 8px 13px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+header section .container .botones button:hover{
+    background: rgb(255, 0, 0);
+}
+header section .container .botones button:nth-child(2){
+    background: #fff;
+}
+header section .container .botones button:nth-child(2):hover{
+    background:rgb(255, 0, 0);
+}
+header section .container .botones button .bi{
+    color: white;
+    transition: all .3s ease-in-out;
+}
+header section .container .botones button:hover .bi{
+    color: #000;
+    
+}
+header section .container .botones button .bi-cloud-arrow-down-fill{
+    color: #000;
+    
+}
+header section .container .botones button:hover .bi-cloud-arrow-down-fill{
+    color: #fff;
+}
+header section .container p{
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+ /*card start header*/
+header .cards{
+    /* border: 1px solid white; */
     width: 95%;
-    height: 36%;
-    margin: au;
+    height: 34%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
+
+
+header .cards .card{
+    position: relative;
+    width: 150px;
+    height:90%;
+    /* border: 1px solid red; */
+    margin: 0px 7px ;
+    border-radius: 10px;
+}
+header .card:hover{
+   transition: .2s;
+    -webkit-transform:scale(1.10);transform:scale(1.10);
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 4);
+}
+header .cards .card img{
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+}
+
+
+/*card star body*/
+/*Tarjetas body continuacion peliculas */
+/*.cards{
+    /* border: 1px solid white; 
+    width: 95%;
+    height: 34%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
+
+/*
+    .cards .card{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height:90%;
+    /*border: 1px solid red; 
+    margin: 0px 7px ;
+    border-radius: 10px;
+    }
+
+ .card:hover{
+   transition: .2s;
+    -webkit-transform:scale(1.10);transform:scale(1.10);
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 4);
+}
+ .cards .card img{
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+} */
