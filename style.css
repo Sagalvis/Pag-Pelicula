@@ -11,7 +11,7 @@ body{
     background: rgb(0, 0, 0);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 body::before{
     content: " ";
@@ -179,19 +179,19 @@ header section .container h1{
     font-size: 35px;
 }
 header section .container h1 span{
-   background-color: red;
-   padding: 0px 15px;
+    background-color: red;
+    padding: 0px 15px;
 }
 header section .container h3 {
-  color: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- header section .container .rateimg {
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header section .container .rateimg {
     color: #fff;
     font-size: 12px;
     margin-top: 15px;
     color: rgb(235, 235, 32);
- }
+}
 header section .container .subtitle {
     color: gray;
     margin-top: 3px; 
@@ -267,8 +267,8 @@ header .cards .card{
 header .card:hover{
     transition: .2s;
     -webkit-transform:scale(1.10);transform:scale(1.10);
-    padding: 20px;
-    box-shadow: 5px 5px 20px rgba(255, 255, 255, 4);
+    
+    box-shadow: 5px 5px 20px rgba(255, 0, 0, 4);
 }
 header .cards .card img{
     width: 100%;
@@ -279,23 +279,23 @@ header .cards .card img{
 
 /*card star body*/
 /*Tarjetas body continuacion peliculas */
-/*.cards{
-    /* border: 1px solid white; 
+/* .cards{
+    border: 1px solid white; 
     width: 95%;
     height: 34%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}*/
+}
 
-/*
+
     .cards .card{
     display: flex;
     position: relative;
     width: 150px;
     height:90%;
-    /*border: 1px solid red; 
+    border: 1px solid red; 
     margin: 0px 7px ;
     border-radius: 10px;
     }
