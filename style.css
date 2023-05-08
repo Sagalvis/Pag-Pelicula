@@ -238,11 +238,11 @@ header section .container .botones button:hover .bi-cloud-arrow-down-fill{
 }
 header section .container p{
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     font-family: sans-serif;
     margin-top: 15px;
 }
- /*card start header*/
+/*card start header*/
 header .cards{
     /* border: 1px solid white; */
     width: 95%;
@@ -258,14 +258,14 @@ header .cards{
 
 header .cards .card{
     position: relative;
-    width: 150px;
+    width: 180px;
     height:90%;
     /* border: 1px solid red; */
     margin: 0px 7px ;
     border-radius: 10px;
 }
 header .card:hover{
-   transition: .2s;
+    transition: .2s;
     -webkit-transform:scale(1.10);transform:scale(1.10);
     padding: 20px;
     box-shadow: 5px 5px 20px rgba(255, 255, 255, 4);
@@ -300,13 +300,13 @@ header .cards .card img{
     border-radius: 10px;
     }
 
- .card:hover{
-   transition: .2s;
+.card:hover{
+    transition: .2s;
     -webkit-transform:scale(1.10);transform:scale(1.10);
     padding: 20px;
     box-shadow: 5px 5px 20px rgba(255, 255, 255, 4);
 }
- .cards .card img{
+.cards .card img{
     width: 100%;
     height: 100%;
     border-radius:10px ;
