@@ -6,18 +6,19 @@
 
 body{
     
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: auto;
     background: rgb(0, 0, 0);
-    display: flex;
+    
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 body::before{
     content: " ";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 2280px;
+    height: 1400px;
     background: url(img/fondo-body.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,10 +28,16 @@ body::before{
 
 }
 
+.titulo-body{
+    color: white;
+}
+
+
 header{
+    margin-left: 60px;
     position: relative;
     width: 90%;
-    height: 90%;
+    height: 900px;
     border: 4px solid gray;
     border-radius: 20px;
     z-index: 2;
@@ -279,23 +286,21 @@ header .cards .card img{
 
 /*card star body*/
 /*Tarjetas body continuacion peliculas */
-/* .cards{
-    border: 1px solid white; 
+.cards{
     width: 95%;
     height: 34%;
-    margin: auto;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 
-    .cards .card{
-    display: flex;
+.cards .card{
     position: relative;
-    width: 150px;
+    width: 180px;
     height:90%;
-    border: 1px solid red; 
+    /* border: 1px solid red; */
     margin: 0px 7px ;
     border-radius: 10px;
     }
@@ -303,11 +308,12 @@ header .cards .card img{
 .card:hover{
     transition: .2s;
     -webkit-transform:scale(1.10);transform:scale(1.10);
-    padding: 20px;
-    box-shadow: 5px 5px 20px rgba(255, 255, 255, 4);
+    box-shadow: 5px 5px 20px rgba(255, 0, 0, 4);
 }
 .cards .card img{
-    width: 100%;
-    height: 100%;
+    width: 180px;
+    height: 260px;
     border-radius:10px ;
-} */
+}
+
+
