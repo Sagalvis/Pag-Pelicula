@@ -5,35 +5,36 @@
 }
 
 body{
-    
     width: auto;
     height: auto;
-    background: rgb(0, 0, 0);
-    
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    background: url(img/fondo-body-5.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
 }
-body::before{
+
+/* body::before{
     content: " ";
     position: absolute;
-    width: 2280px;
-    height: 1400px;
-    background: url(img/fondo-body.jpg) ;
-    background-position: center;
+    width:100%;
+    height: 100%;
+    background: url(img/fondo-body-3.jpg) ;
+    background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    
     backdrop-filter: blur(5px);
     opacity: .40;
 
-}
-
-.titulo-body{
-    color: white;
-}
+} */
 
 
-header{
+/* HEADER STARTS */
+
+main{
     margin-left: 60px;
     position: relative;
     width: 90%;
@@ -42,7 +43,7 @@ header{
     border-radius: 20px;
     z-index: 2;
 }
-header .img-main{
+main .img-main{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -53,7 +54,7 @@ header .img-main{
 }
 
 
-header .header-1{
+main .header-1{
     position: absolute;
     width: 100px;
     height: 15px;
@@ -66,7 +67,7 @@ header .header-1{
     justify-content: center;
 }
 
-header .header-1 .header-2{
+main .header-1 .header-2{
     width:30px ;
     height: 3px;
     background: #fff;
@@ -76,14 +77,14 @@ header .header-1 .header-2{
 
 
 }
-header .header-1 .header-3{
+main .header-1 .header-3{
     width:4px ;
     height: 4px;
     background: #fff;
     border-radius: 50%;
     margin-bottom: 1px;
 }
-
+/* HEADER NAV STARTS */
 header nav{
     width: 95%;
     height: 7.5%;
@@ -164,7 +165,7 @@ header nav .buscador input{
 
 
 /*nav end*/
-header section{
+main section{
     /* border: 1px solid white; */
     width: 95%;
     height: 56.5%;
@@ -173,44 +174,43 @@ header section{
     align-items: center; 
     justify-content: flex-start;   
 }
-
-header section .container{
+main section .container{
     /* border: 1px solid white; */
     width: 400px;
     height: 70%;
     padding-left: 60px;
 }
-header section .container h1{
+main section .container h1{
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 35px;
 }
-header section .container h1 span{
+main section .container h1 span{
     background-color: red;
     padding: 0px 15px;
 }
-header section .container h3 {
+main section .container h3 {
     color: #fff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-header section .container .rateimg {
+main section .container .rateimg {
     color: #fff;
     font-size: 12px;
     margin-top: 15px;
     color: rgb(235, 235, 32);
 }
-header section .container .subtitle {
+main section .container .subtitle {
     color: gray;
     margin-top: 3px; 
 }
-header section .container .subtitle span {
+main section .container .subtitle span {
     padding: 0px 5px;
 }
-header section .container .botones{
+main section .container .botones{
     margin-top: 5px;
     display: flex;
 }
-header section .container .botones button{
+main section .container .botones button{
     background: rgb(75, 75, 75) ;
     border: none;
     outline: none;
@@ -219,38 +219,38 @@ header section .container .botones button{
     font-size: 18px;
     transition: all .3s ease-in-out;
 }
-header section .container .botones button:hover{
+main section .container .botones button:hover{
     background: rgb(255, 0, 0);
 }
-header section .container .botones button:nth-child(2){
+main section .container .botones button:nth-child(2){
     background: #fff;
 }
-header section .container .botones button:nth-child(2):hover{
+main section .container .botones button:nth-child(2):hover{
     background:rgb(255, 0, 0);
 }
-header section .container .botones button .bi{
+main section .container .botones button .bi{
     color: white;
     transition: all .3s ease-in-out;
 }
-header section .container .botones button:hover .bi{
+main section .container .botones button:hover .bi{
     color: #000;
     
 }
-header section .container .botones button .bi-cloud-arrow-down-fill{
+main section .container .botones button .bi-cloud-arrow-down-fill{
     color: #000;
     
 }
-header section .container .botones button:hover .bi-cloud-arrow-down-fill{
+main section .container .botones button:hover .bi-cloud-arrow-down-fill{
     color: #fff;
 }
-header section .container p{
+main section .container p{
     color: white;
     font-size: 15px;
     font-family: sans-serif;
     margin-top: 15px;
 }
 /*card start header*/
-header .cards{
+main .cards{
     /* border: 1px solid white; */
     width: 95%;
     height: 34%;
@@ -263,7 +263,7 @@ header .cards{
 
 
 
-header .cards .card{
+main .cards .card{
     position: relative;
     width: 180px;
     height:90%;
@@ -271,13 +271,13 @@ header .cards .card{
     margin: 0px 7px ;
     border-radius: 10px;
 }
-header .card:hover{
+main .card:hover{
     transition: .2s;
     -webkit-transform:scale(1.10);transform:scale(1.10);
     
     box-shadow: 5px 5px 20px rgba(255, 0, 0, 4);
 }
-header .cards .card img{
+main .cards .card img{
     width: 100%;
     height: 100%;
     border-radius:10px ;
@@ -314,6 +314,12 @@ header .cards .card img{
     width: 180px;
     height: 260px;
     border-radius:10px ;
+}
+
+.titulo-body{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
 }
 
 
